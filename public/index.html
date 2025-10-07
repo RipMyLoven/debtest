@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploy Test App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>🚀 Deploy Test</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Главная</a></li>
+                <li><a href="/about">О проекте</a></li>
+                <li><a href="#" onclick="checkStatus()">Статус API</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Добро пожаловать в Deploy Test App!</h2>
+                <p>Это простое веб-приложение для тестирования деплоя на вашем хостинге.</p>
+                <div class="buttons">
+                    <button onclick="checkStatus()" class="btn btn-primary">Проверить статус</button>
+                    <button onclick="getServerInfo()" class="btn btn-secondary">Информация о сервере</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h3>Возможности приложения</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>📡 API Endpoints</h4>
+                        <p>Встроенные API маршруты для проверки работоспособности</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🎨 Адаптивный дизайн</h4>
+                        <p>Красивый интерфейс, который работает на всех устройствах</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>⚡ Express.js</h4>
+                        <p>Быстрый и надежный веб-сервер на Node.js</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🔧 Готов к деплою</h4>
+                        <p>Настроен для размещения на популярных хостинг-платформах</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="api-test">
+            <div class="container">
+                <h3>Тестирование API</h3>
+                <div id="api-result" class="api-result">
+                    <p>Нажмите кнопку выше, чтобы протестировать API</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Deploy Test App. Создано для тестирования деплоя.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

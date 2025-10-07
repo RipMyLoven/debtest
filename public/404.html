@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Страница не найдена</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>🚀 Deploy Test</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Главная</a></li>
+                <li><a href="/about">О проекте</a></li>
+                <li><a href="#" onclick="checkStatus()">Статус API</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="error-page">
+            <div class="container">
+                <div class="error-content">
+                    <h1 class="error-code">404</h1>
+                    <h2>Страница не найдена</h2>
+                    <p>К сожалению, запрашиваемая страница не существует.</p>
+                    <p>Возможно, она была удалена или вы перешли по неверной ссылке.</p>
+                    
+                    <div class="error-actions">
+                        <a href="/" class="btn btn-primary">Вернуться на главную</a>
+                        <a href="/about" class="btn btn-secondary">О проекте</a>
+                    </div>
+
+                    <div class="error-suggestions">
+                        <h3>Что вы можете сделать:</h3>
+                        <ul>
+                            <li>Проверьте правильность URL-адреса</li>
+                            <li>Вернитесь на <a href="/">главную страницу</a></li>
+                            <li>Узнайте больше <a href="/about">о проекте</a></li>
+                            <li>Проверьте <a href="#" onclick="checkStatus()">статус API</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Deploy Test App. Создано для тестирования деплоя.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
